@@ -17,9 +17,9 @@ public class VectorPractice {
 
     public VectorPractice(){
         System.out.println("Here - VectorPractice constructor");
-        printVector();
+        testVector();
     }
-    private void printVector(){
+    private void testVector(){
         // 타입 미설정 - Object 형으로 선언
         Vector v = new Vector();
 

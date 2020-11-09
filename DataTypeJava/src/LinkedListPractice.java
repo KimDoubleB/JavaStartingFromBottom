@@ -49,6 +49,28 @@ public class LinkedListPractice {
         linkedListData.removeLastOccurrence("Java");
         System.out.println(linkedListData);
 
+        // Not use generic
+        LinkedList linkedListData2 = new LinkedList();
+        linkedListData2.add(123);
+        linkedListData2.add(24312.241);
+        linkedListData2.add("안녕하세요");
+
+        System.out.println(linkedListData2);
+        for (Object o: linkedListData2){
+            // 다 타입이 다르다.
+            System.out.print(o.getClass());
+            System.out.print(' ');
+            System.out.println(o);
+        }
+
+//        Integer integerData = linkedListData2.get(0); // 에러! Object 이므로 형변환 필수
+        // 각 데이터에 맞게 형변환 필수 -> Object type의 단점
+        // Compile 단에서는 오류인지 모른다.
+        Integer integerData = (Integer)linkedListData2.get(0);
+        Double doubleData = (Double)linkedListData2.get(1);
+        String stringData = (String)linkedListData2.get(2);
+        System.out.printf("%d %f %s\n", integerData, doubleData, stringData);
+
         // NoSuchElementException -> get...() can't use in length 0 list.
         //        System.out.println(queue.getFirst());
         //        System.out.println(queue.getLast());

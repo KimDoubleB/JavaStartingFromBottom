@@ -59,6 +59,8 @@ public class VectorPractice {
         System.out.println(stringInitSizeVector.size());
         System.out.println(stringInitSizeVector.capacity());
 
+        // 사실, list는 print하면 내용물이 자동으로 다 나온다.
+        System.out.println(stringInitSizeVector);
     }
 
     private void printAllVector(Vector v){

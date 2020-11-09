@@ -94,13 +94,15 @@ public class DataTypePractice {
         printLine(15);
         new VectorPractice();
         printLine(15);
+        new ArrayListPractice();
+        printLine(15);
 
     }
 
 
     public static void printLine(int length){
         StringBuffer line = new StringBuffer();
-        for(int i = 0; i < length; ++i){
+        for (int i = 0; i < length; ++i){
             line.append("-");
         }
         System.out.println(line);

@@ -1,3 +1,4 @@
+import javax.management.ValueExp;
 import java.util.Arrays;
 
 public class DataTypePractice {
@@ -89,17 +90,19 @@ public class DataTypePractice {
         stringBufferData.insert(stringBufferData.indexOf(","), "11");
         System.out.println(stringBufferData);
 
-        int[] integers = {1, 2, 3, 4, 5, 6};
-        String[] people = {"mike", "bob", "john"};
-        StringBuffer[] cafeMaker = new StringBuffer[10];
-        // ArrayIndexOutOfBoundsException 조심하자.
-        for (int i = 0; i < cafeMaker.length; ++i){
-            cafeMaker[i] = new StringBuffer("starbucks " + (i+1));
-            System.out.println(cafeMaker[i]);
-        }
+        ArrayPractice.printArray();
+        printLine(15);
+        new VectorPractice();
+        printLine(15);
 
-        // python 의 array 처럼 출력을 하고싶다면, java.util.Arrays 를 이용하자.
-        System.out.println(Arrays.deepToString(cafeMaker));
-        System.out.println(Arrays.toString(cafeMaker));
+    }
+
+
+    public static void printLine(int length){
+        StringBuffer line = new StringBuffer();
+        for(int i = 0; i < length; ++i){
+            line.append("-");
+        }
+        System.out.println(line);
     }
 }

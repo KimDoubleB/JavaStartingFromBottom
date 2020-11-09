@@ -92,11 +92,15 @@ public class DataTypePractice {
 
         ArrayPractice.printArray();
         printLine(15);
+
         new VectorPractice();
         printLine(15);
+
         new ArrayListPractice();
         printLine(15);
 
+        new LinkedListPractice();
+        printLine(15);
     }
 
 

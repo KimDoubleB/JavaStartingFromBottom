@@ -101,6 +101,9 @@ public class DataTypePractice {
 
         new LinkedListPractice();
         printLine(15);
+
+        HashSetPractice.testHashSet();
+        printLine(15);
     }
 
 

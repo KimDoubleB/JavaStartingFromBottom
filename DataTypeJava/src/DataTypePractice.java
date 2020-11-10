@@ -110,6 +110,9 @@ public class DataTypePractice {
 
         HashMapPractice.testHashMap();
         printLine(15);
+
+        TreeMapPractice.testTreeMap();
+        printLine(15);
     }
 
 

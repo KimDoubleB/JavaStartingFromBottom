@@ -3,10 +3,25 @@ import java.util.*;
 import static java.util.Arrays.*;
 
 public class HashMapPractice {
+    /*
+    map: key-value pair 형식
+    - key 와 value 매칭
+    - put, get, remove
+
+    HashMap
+    - key, value 에 null 저장가능
+    - not thread safe
+        -- thread safe 사용하고 싶다면 HashTable 사용
+        -- 대신, key-value 에 null 사용불가
+    - keySet(), values()
+    - entrySet() -> key, value 둘 다 가져올 수 있다. getkey(), getValue()
+    - containsKey(), containsValue()
+     */
     public static void testHashMap(){
         Map<String, String> stringMap = new HashMap<>();
         stringMap.put("A", "ABCDED");
         stringMap.put("B", "adfdsa");
+        stringMap.put("B", "안뇽");   // 중복 key인 경우, 덮어씌워진다.
         stringMap.put("C", "gfdhfd");
         stringMap.put("D", "twetwre");
         stringMap.put("E", "qewewq");

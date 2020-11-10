@@ -7,10 +7,33 @@ public class AdapterPattern {
      */
 
     public static void main(String[] args) {
+        // First example
+        System.out.println("First example");
+        // Double 를 지원하는 method 에 Adapter 를 사용해 Integer 에도 사용가능
         Adapter adapterInstance = new AdapterImplements();
         System.out.println(adapterInstance.twiceOf(10));
         System.out.println(adapterInstance.halfOf(10));
         System.out.println(adapterInstance.halfOf(11));
         System.out.println(adapterInstance.halfOf(12));
+
+        // Second Example
+        System.out.println("Second example");
+        // Dog 객체 대신 Cat 인터페이스 사용해야만 하는 상황
+        // DogAdapter 를 통해 Dog - Cat 호환
+
+        BullDog myBullDog = new BullDog();
+        BritishFoldCat myBritishFoldCat = new BritishFoldCat();
+
+        // myBullDog 사용불가 시, 이렇게 adapter 를 통해 변환해 사용할 수 있다.
+        Cat dogAdapter = new DogAdapter(myBullDog);
+
+        myBullDog.bowWow();
+        myBullDog.eat();
+        System.out.println("-------");
+        myBritishFoldCat.mewMew();
+        myBritishFoldCat.eat();
+        System.out.println("-------");
+        dogAdapter.mewMew();
+        dogAdapter.eat();
     }
 }

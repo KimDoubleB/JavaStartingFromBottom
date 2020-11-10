@@ -25,6 +25,8 @@ public class TreeSetPractice {
     */
 
     public static void testTreeSet(){
+        System.out.println("Here - testTreeSet");
+
         TreeSet<Integer> integerTreeSet = new TreeSet<>(Arrays.asList(5, 7, 1, 0, 5124121, -1, 421421));
         System.out.println(integerTreeSet); // 자동 정렬
         integerTreeSet.add(42);

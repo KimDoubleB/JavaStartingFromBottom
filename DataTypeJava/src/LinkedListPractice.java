@@ -14,6 +14,7 @@ public class LinkedListPractice {
      *  listIterator, subList
      */
     public LinkedListPractice(){
+        System.out.println("Here - LinkedListPractice constructor");
         testLinkedList();
     }
 

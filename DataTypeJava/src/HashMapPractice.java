@@ -18,6 +18,8 @@ public class HashMapPractice {
     - containsKey(), containsValue()
      */
     public static void testHashMap(){
+        System.out.println("Here - testHashMap");
+
         Map<String, String> stringMap = new HashMap<>();
         stringMap.put("A", "ABCDED");
         stringMap.put("B", "adfdsa");

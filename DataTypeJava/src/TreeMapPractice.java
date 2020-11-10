@@ -21,6 +21,8 @@ public class TreeMapPractice {
     - containsKey(), containsValue()
  */
     public static void testTreeMap(){
+        System.out.println("Here - testTreeMap");
+
         TreeMap<String, String> stringTreeMap = new TreeMap<>();
         stringTreeMap.put("1 Second", "1 data");
         stringTreeMap.put("0 First", "0 data");

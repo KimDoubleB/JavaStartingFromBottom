@@ -17,6 +17,8 @@ public class HashSetPractice {
 
      */
     public static void testHashSet(){
+        System.out.println("Here - testHashSet");
+
         HashSet<String> hashSetData = new HashSet<String>();
         ArrayList<HashSet<String>> arrayListHashSetData = new ArrayList<>(10);
         HashSet<ArrayList<String>> hashSetArrayListData = new HashSet<>();

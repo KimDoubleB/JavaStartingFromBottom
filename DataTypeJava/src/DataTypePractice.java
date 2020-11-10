@@ -90,7 +90,7 @@ public class DataTypePractice {
         stringBufferData.insert(stringBufferData.indexOf(","), "11");
         System.out.println(stringBufferData);
 
-        ArrayPractice.printArray();
+        new ArrayPractice();
         printLine(15);
 
         new VectorPractice();

@@ -14,6 +14,7 @@ public class ArrayListPractice {
      */
 
     public ArrayListPractice(){
+        System.out.println("Here - ArrayListPractice constructor");
         testArrayList();
     }
 

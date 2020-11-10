@@ -1,8 +1,11 @@
 import java.util.Arrays;
 
 public class ArrayPractice {
-    public ArrayPractice(){}
-    public static void printArray(){
+    public ArrayPractice(){
+        System.out.println("Here - ArrayPractice constructor");
+        printArray();
+    }
+    private void printArray(){
         int[] integers = {1, 2, 3, 4, 5, 6};
         String[] people = {"mike", "bob", "john"};
         StringBuffer[] cafeMaker = new StringBuffer[10];

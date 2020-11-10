@@ -107,6 +107,9 @@ public class DataTypePractice {
 
         TreeSetPractice.testTreeSet();
         printLine(15);
+
+        HashMapPractice.testHashMap();
+        printLine(15);
     }
 
 

@@ -1,0 +1,66 @@
+import javax.sound.sampled.Line;
+import java.util.*;
+import static java.util.Arrays.*;
+
+public class HashMapPractice {
+    public static void testHashMap(){
+        Map<String, String> stringMap = new HashMap<>();
+        stringMap.put("A", "ABCDED");
+        stringMap.put("B", "adfdsa");
+        stringMap.put("C", "gfdhfd");
+        stringMap.put("D", "twetwre");
+        stringMap.put("E", "qewewq");
+        stringMap.put("F", "yku");
+        System.out.println(stringMap);
+
+        Map<String, List<Integer>> stringIntegerListMap = new HashMap<>();
+        stringIntegerListMap.put("List", asList(1, 2, 3, 4, 5));
+        stringIntegerListMap.put("Empty", Collections.emptyList());
+        stringIntegerListMap.put("Singleton", Collections.singletonList(123));
+        stringIntegerListMap.put("Null", null);
+        // keySet, values
+        System.out.println(stringIntegerListMap);
+        System.out.println(stringIntegerListMap.keySet());
+        System.out.println(stringIntegerListMap.values());
+
+        // using Map.Entry -> getKey, getValue
+        Set<Map.Entry<String, List<Integer>>> entries = stringIntegerListMap.entrySet();
+        System.out.println(entries);
+        for(Map.Entry<String, List<Integer>> tempEntry : entries){
+            System.out.println(tempEntry);
+            System.out.println(tempEntry.getKey() + " " + tempEntry.getValue());
+        }
+
+        // containsKey, containsValue
+        if(stringIntegerListMap.containsKey("Null") ||
+            stringIntegerListMap.containsKey("null")){
+            System.out.println("Contains Key \"NULL\"");
+            stringIntegerListMap.remove("Null");
+            stringIntegerListMap.remove("null");
+            stringIntegerListMap.put("NotNull", new LinkedList<>());
+        }
+
+        // 그냥 한 것. hashMap 은 순서가 없다.
+        if(stringMap.containsValue("twetwre")){
+            System.out.println("Contains Value \"twetwre\"");
+            Iterator<String> iter = stringMap.values().iterator();
+            int index = 0;
+            while(iter.hasNext()){
+                if (iter.next().equals("twetwre"))
+                    break;
+                index++;
+            }
+
+            for (int i = 0; i < stringMap.keySet().size(); ++i){
+                if (i == index){
+                    System.out.println(stringMap.keySet().toArray()[i]);
+                    System.out.println(stringMap.get(stringMap.keySet().toArray()[i]));
+                }
+            }
+        }
+
+
+
+
+    }
+}

@@ -60,7 +60,7 @@ public int getAllPrice(Lotto lotto) {
 
 - NPE 문제를 일으키는 `null` 을 직접 사용하지 않아도 된다.
 - `null` 체크를 계속해야하는 문제점을 해결해준다.
-- `null` 을 포함한다는 의미를 코드에 표현할 수 있습니다.
+- `null` 을 포함한다는 의미를 코드에 표현할 수 있다.
 
 # Reference
 

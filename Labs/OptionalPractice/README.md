@@ -1,8 +1,12 @@
+테스트 코드로 작성:
+https://github.com/KimDoubleB/JavaStartingFromBottom/tree/master/Labs/OptionalPractice/src/test/java
+
 # Optional
 ![image](https://user-images.githubusercontent.com/37873745/107869159-4bdc9e00-6ece-11eb-8af7-013997f3549e.png)
 
 ## Optional Stream (Java9)
 데이터가 있는 경우의 Optional만 Stream으로 반환
+
 ![Optional stream](https://user-images.githubusercontent.com/37873745/112173782-3aa74f80-8c39-11eb-856a-b82d1a190a4b.png)
 
 

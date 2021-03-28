@@ -15,6 +15,20 @@ public class JsonMain {
         System.out.println(personToJson);
         // {"name":"Kim","age":25,"job":{"name":"Backend developer","averageSalary":600,"company":"Game company"}}
 
+        personToJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(p);
+        System.out.println(personToJson);
+        /*
+            {
+              "name" : "Kim",
+              "age" : 25,
+              "job" : {
+                "name" : "Backend developer",
+                "averageSalary" : 600,
+                "company" : "Game company"
+              }
+            }
+         */
+
         var personList = Arrays.asList(
                 new Person("Lee", 26, new Job("Student", 0, "University")),
                 new Person("Park", 42, new Job("Teacher", 200, "High School")),
